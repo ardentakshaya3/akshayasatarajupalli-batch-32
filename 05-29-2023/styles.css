@@ -1,0 +1,22 @@
+body {
+    color: #045809;
+    border:2px solid #6CB5D3;
+    border-radius:5px;
+    }
+    
+    h1 {
+        background:#72B8DE;text-align: center;margin-bottom:0;
+    }
+    
+    .tagline {
+        margin-left:41%;font-style:italic;
+    }
+    
+    div {
+        margin:1.8%;
+    }
+    
+    p {
+        align="justify";
+    }
+        
