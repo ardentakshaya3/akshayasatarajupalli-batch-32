@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>My Details</title>
+    <style>
+        body {
+            background-color: black;
+        }
+     
+        img {
+            object-fit: cover;
+            width: 250px;
+            height: 250px; 
+            border-radius: 50%; 
+            margin: 15%; 
+            margin-left: 40%;
+        }
+    </style>
+    <script>
+        const person = {
+  firstname: "Akshaya",
+  lastname: "Satarajupalli",
+  gender: 'F',
+  workExp: '2.5 years',
+  citizenship: "India",
+  degrees: ["B.tech","Master's"],
+  major: "Computer Science",
+  favColor: "black",
+  favNumber: 3,
+  imgUrl: 'avatar.jpg',
+  hobbies: ["Reading novels","Listening songs","Dancing","Coding","Playing Badminton"],
+  displayName: function () {
+    console.log(`It's me, Akshaya!`);
+  },
+  
+};
+
+window.onload = function(){
+    person.displayName();
+    document.getElementById('image').src = person.imgUrl;
+    console.log(person.hobbies[4]);
+};
+
+</script>
+
+</head>    
+<body>
+    <div><img id="image"></img></div>
+</body>
+</html>
