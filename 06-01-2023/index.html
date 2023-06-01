@@ -1,0 +1,68 @@
+<html>
+    <head>
+<title>Test JS</title>
+<style>
+    body {
+        border: 3px solid grey;
+        max-width: 100%;
+    }
+    div {
+        margin: 15% auto; 
+        width:350px;
+    }
+    input {
+        margin: 0.5rem;
+    }
+</style>
+<script>
+    var env,amount;
+    var sendingamount;
+    function cal() {
+    amount = Number(document.getElementById('amount').value);
+    env = document.getElementById('env').value;
+    console.log(env);
+    if(env===''){
+        console.log("Enter environment");
+        window.alert("Enter environment");
+        return true;
+    }
+    else{
+        switch(env) {
+        case 'dev':
+            sendingamount=amount+(0.1*amount);
+            break;
+        case 'test':
+            sendingamount=amount+(0.2*amount);
+            break;
+        case 'stage':
+            sendingamount=amount+(0.3*amount);
+            break;
+        case 'prod':
+            sendingamount=amount+(0.05*amount);
+            break;
+        default:
+            sendingamount="Not Available";
+    }
+    if(sendingamount!==0)
+        document.getElementById("result").innerHTML = sendingamount;
+    else
+    document.getElementById("result").innerHTML = "Not Available";
+    console.log(sendingamount);
+    return false;
+    }
+
+}
+  
+</script>
+    </head>
+    <body>
+<div>
+    <form action="" onsubmit="return cal()">
+        Amount <br><input type="number" name="amount" id="amount" step="any"><br>
+        Environment <br><input type="string" name="env" id="env"><br>
+        <input type="submit" value="Submit" style="margin-left: 15%;">
+      </form>
+      <p>Sending Amount: <strong id="result"></strong></p>
+</div>
+    </body>
+</html>
