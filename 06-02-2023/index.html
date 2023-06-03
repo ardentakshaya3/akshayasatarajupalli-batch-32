@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Hobbies</title>
+    
+    <script>
+        
+  var hobbies = ["Playing Badminton","Reading novels","Listening songs","Playing Chess","Dancing","Coding"];
+
+
+function displayHobbies(){
+    console.log(hobbies);
+    // return hobbies;
+}
+
+function addHobby() {
+    hobbies.push(document.getElementById("add").value);
+    displayHobbies();
+}
+
+var del = [];
+function delHobby() { 
+    const index = hobbies.indexOf(document.getElementById("del").value);
+    if(index>-1) {
+        hobbies.splice(index, 1);
+    }
+console.log(hobbies);
+}
+
+</script>
+
+</head>    
+<body>
+    <div><a href="javascript:displayHobbies();">Check out my hobbies!</a>
+    </script>
+</p></p></strong>
+
+Enter hobbies to be added: <input type="text" id="add" />
+<input type ="button" onclick="addHobby();" value="Add" />
+<br><br>
+    Enter hobbies to be deleted: <input type="text" id="del" />
+<input type ="button" onclick="delHobby();" value="Delete" />
+</div>
+</body>
+</html>
