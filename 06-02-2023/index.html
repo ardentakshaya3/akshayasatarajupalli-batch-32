@@ -5,25 +5,37 @@
     <script>
         
   var hobbies = ["Playing Badminton","Reading novels","Listening songs","Playing Chess","Dancing","Coding"];
-
+  var hobbiesU = hobbies.map(item => item.toUpperCase());
 
 function displayHobbies(){
     console.log(hobbies);
-    // return hobbies;
 }
 
 function addHobby() {
-    hobbies.push(document.getElementById("add").value);
+    const index = hobbiesU.indexOf(document.getElementById("add").value.toUpperCase());
+    if(index>-1) {
+        document.getElementById('add').value = '';
+        console.log("Value already exists");
+    }
+    else {
+        hobbies.push(document.getElementById("add").value);
+        hobbiesU.push(document.getElementById("add").value.toUpperCase());
+    }
+    document.getElementById('add').value = '';
     displayHobbies();
 }
 
 var del = [];
 function delHobby() { 
-    const index = hobbies.indexOf(document.getElementById("del").value);
+    const index = hobbiesU.indexOf(document.getElementById("del").value.toUpperCase());
     if(index>-1) {
         hobbies.splice(index, 1);
     }
-console.log(hobbies);
+    else {
+        console.log("Hobby not available");
+    }
+    document.getElementById('del').value = '';
+    console.log(hobbies);
 }
 
 </script>
