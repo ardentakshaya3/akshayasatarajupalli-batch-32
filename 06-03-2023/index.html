@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>My Details</title>
+<style>
+    input {
+        margin: 1rem;
+    }
+</style>
+<script>
+          
+          function display() {
+                var fn = document.getElementById("firstname").value;
+                var ln = document.getElementById("lastname").value;
+                var dob = document.getElementById("dob").value; 
+                var gender = document.getElementById("gender").value;
+                var email = document.getElementById("email").value;
+                var phno = document.getElementById("phone").value;
+                var degree = document.getElementById("degree").value;
+                if(fn==''||ln==''||dob==''||gender==''||email==''||phno==''||degree=='')
+                {
+                    alert("Please enter all the details");
+                }
+                
+                else{
+                    document.getElementById("details").innerHTML="<h2>Your details are:</h2><br>"+
+                    
+                    "<table>"+
+                    "<tr><td> First Name </td><td> : " + fn + "</td></tr>" +
+                    "<tr><td> Last Name </td><td> : " + ln + "</td></tr>" +
+                    "<tr><td> Date of Birth </td><td> : " + dob + "</td></tr>" +
+                    "<tr><td> Gender </td><td> : " + gender + "</td></tr>" +
+                    "<tr><td> Email </td><td> : " + email + "</td></tr>" +
+                    "<tr><td> Phone </td><td> : " + phno + "</td></tr>" +
+                    "<tr><td> Date of Birth </td><td> : " + degree + "</td></tr>";
+                }
+            }
+            
+</script>
+
+</head>    
+<body>
+   <form>
+            <div class="row">
+            <div class="col">
+                First Name: <input type="text" id="firstname"/>
+                Last Name:  <input type="text" id="lastname"/>
+                Date of Birth: <input type="text" id="dob"/>
+                Gender: <input type="text" id="gender"/>
+            </div>
+            <div class="col">
+                Email: <input type="email" id="email"/>
+                Phone: <input type="number" id="phone" maxlength="10"/>
+                Latest Degree Attained: <input type="text" id="degree"/>
+            </div>
+            <button style="margin-left: 30%;" id="submit" onclick="display()">Submit</button>
+            </div>
+    </form>
+    <div>
+        <p id="details"></p>
+    </div>
+</body>
+</html>

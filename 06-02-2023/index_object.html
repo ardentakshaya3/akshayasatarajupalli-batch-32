@@ -4,8 +4,9 @@
     
     <script>
         
-  var hobbies = ["Playing Badminton","Reading novels","Listening songs","Playing Chess","Dancing","Coding"];
-  var hobbiesU = hobbies.map(item => item.toUpperCase());
+  var hobbies = [{type:"Sports",name:"Badminton"},{type:"Regular",name:"Reading novels"},{name:"Regular",type:"Listening songs"},
+  {type:"Sports",name:"Chess"},{type:"Activity",name:"Dancing"},{type:"Technical",name:"Coding"}];
+  var hobbiesU = hobbies.map(item => item.name.toUpperCase());
 
 function displayHobbies(){
     console.log(hobbies);
