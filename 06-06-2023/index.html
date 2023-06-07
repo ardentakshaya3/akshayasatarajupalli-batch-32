@@ -5,10 +5,13 @@
 
     <style>
         form,h2,#submittedValues {
-            margin: 3rem;;
+            margin: 3rem;
         }
         input {
-            margin: 0.3rem;
+            margin: 0.5rem;
+        }
+        td { 
+            width: 0.5%;
         }
     </style>
     
@@ -67,7 +70,7 @@
             </tr>
             <tr>
                 <td><label for="phone">Phone</label></td>
-                <td><input type="tel" id="phone" name="Phone" required></td>
+                <td><input type="number" id="phone" name="Phone" maxlength="10" required></td>
             </tr>
             <tr>
                 <td><label for="dob">Date of Birth</label></td>
@@ -75,11 +78,11 @@
             </tr>
             <tr>
                 <td>Hobbies</td>
-                <td><input type="checkbox" id="hobbies1" name="Hobbies" value="Coding"><label>Coding</label></td>
-                <td><input type="checkbox" id="hobbies2" name="Hobbies" value="Badminton"><label>Badminton</label></td>
-                <td><input type="checkbox" id="hobbies3" name="Hobbies" value="Dancing"><label>Dancing</label></td>
-                <td><input type="checkbox" id="hobbies4" name="Hobbies" value="=Reading novels"><label>Reading novels</label></td>
-                <td><input type="checkbox" id="hobbies5" name="Hobbies" value="Chess"><label>Chess</label></td>
+                <td class="hobbies" style="max-width: 0.3rem;"><input type="checkbox" id="hobbies1" name="Hobbies" value="Coding"><label>Coding</label></td>
+                <td class="hobbies"><input type="checkbox" id="hobbies2" name="Hobbies" value="Badminton"><label>Badminton</label></td>
+                <td class="hobbies"><input type="checkbox" id="hobbies3" name="Hobbies" value="Dancing"><label>Dancing</label></td>
+                <td class="hobbies"><input type="checkbox" id="hobbies4" name="Hobbies" value="=Reading novels"><label>Reading novels</label></td>
+                <td class="hobbies"><input type="checkbox" id="hobbies5" name="Hobbies" value="Chess"><label>Chess</label></td>
             </tr>
             <tr>
                 <td><input type="submit" value="Submit"></td>
