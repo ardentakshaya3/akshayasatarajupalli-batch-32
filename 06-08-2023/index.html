@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script>
+            function Ctor() {}
+            const inst = new Ctor();
+            let arr = [111, 13, 25, -9, 34, 1, -3];
+            var min = arr[0], min2 = Infinity;
+            
+            for (var i= 0; i< arr.length; i++) {
+                if (arr[i]< min) {
+                    min2 = min;
+                    min = arr[i]; 
+                } else if (arr[i]< min2) {
+                    min2 = arr[i]; 
+                }
+            }
+
+        document.write("Second smallest element is "+min2,"</br>");
+        </script>
+    </head>
+    <body>
+<p>Hello</p>
+    </body>
+</html>
