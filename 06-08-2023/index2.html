@@ -4,10 +4,8 @@
         <script>
 
             const arrayFunc = {
-            secondSmall: function() {
-                 arr= [111, 13, 25, -9, 34, 1, -3];
+            secondSmall: function(arr) {
                         var min = arr[0], min2;
-                        
                         for (var i= 0; i< arr.length; i++) {
                             if (arr[i]< min) {
                                 min2 = min;
@@ -19,9 +17,9 @@
                     document.write("Second smallest element is "+min2,"</br>");
             }
             };
-
+            var arr= [111, 13, -2, 25, -9, -12, 34, 1, -3, -19];
             const obj = Object.create(arrayFunc);
-            obj.secondSmall();
+            obj.secondSmall(arr);
         </script>
     </head>
     <body>
