@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script>
+
+            const arrayFunc = {
+            secondSmall: function() {
+                 arr= [111, 13, 25, -9, 34, 1, -3];
+                        var min = arr[0], min2;
+                        
+                        for (var i= 0; i< arr.length; i++) {
+                            if (arr[i]< min) {
+                                min2 = min;
+                                min = arr[i]; 
+                            } else if (arr[i]< min2) {
+                                min2 = arr[i]; 
+                            }
+                        }
+                    document.write("Second smallest element is "+min2,"</br>");
+            }
+            };
+
+            const obj = Object.create(arrayFunc);
+            obj.secondSmall();
+        </script>
+    </head>
+    <body>
+        <p>Custom sort</p>
+    </body>
+</html>
