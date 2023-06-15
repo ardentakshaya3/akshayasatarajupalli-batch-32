@@ -1,0 +1,71 @@
+::ng-deep * {  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navbar-header {
+    background-color: rgb(58, 110, 158);
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-brand {
+    cursor: default;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.nav {
+  left: 0px;
+  top: 0px;
+}
+
+.search {
+  position: relative; 
+}
+
+input {
+    width: 330px;
+    height: 20px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    font-style: italic;
+    padding: 5px 5px 5px 45px;  
+    text-align: center;
+}   
+
+  .menuItems{
+    display: flex;
+    padding: 21px 0;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  .menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  ul {
+    display: inline-flex;
+    list-style-type: none;  
+    align-items: center;
+  }
+
+  a  {
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  a:hover {
+    background-color: rgb(41, 63, 80);
+  }
