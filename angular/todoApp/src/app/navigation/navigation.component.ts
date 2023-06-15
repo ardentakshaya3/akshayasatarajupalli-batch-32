@@ -9,7 +9,6 @@ export class NavigationComponent {
   status = "Login";
   flag=true;
   switchStatus() {
-    this.flag = !this.flag;
     this.status = this.flag==false?"Logout":"Login";
   }
 }

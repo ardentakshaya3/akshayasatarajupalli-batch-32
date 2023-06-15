@@ -9,7 +9,7 @@
         <ul>
           <li class="menu"><a href="#">Profile</a></li>
           <li class="menu"><a href="#">Contact</a></li>
-          <li class="menu"><a [routerLink]="" (click)="switchStatus()">{{status}}</a></li>
+          <li class="menu"><a [routerLink]="" (click)="switchStatus();this.flag = !this.flag;">{{status}}</a></li>
         </ul>
       </div>
     </nav>

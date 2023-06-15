@@ -10,10 +10,8 @@ export class HeaderComponent {
   status = "Login";
   flag=true;
   switchStatus() {
-    this.flag = !this.flag;
     this.status = this.flag==false?"Logout":"Login";
   }
-
 }
 
   
