@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
-  status = "Login";
-  flag=true;
+  statusH = "Login";
   switchStatus() {
-    this.status = this.flag==false?"Logout":"Login";
+    this.statusH = this.statusH=="Login"?"Logout":"Login";
   }
 }
 

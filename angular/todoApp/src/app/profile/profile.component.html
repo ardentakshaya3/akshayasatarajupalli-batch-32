@@ -1,0 +1,25 @@
+<div  *ngIf="session" class="limiter">
+  <app-navigation></app-navigation>
+  <h2 style="margin-left: 50%;margin-bottom: 2rem;">PROFILE</h2>
+  <!-- <div>
+    First Name: <input type="text" id="fname" placeholder="first name" [(ngModel)]="fname"/>
+    Last Name: <input type="text" id="lname" placeholder=" last name" [(ngModel)]="lname"/>
+    DOB: <input type="date" id="dob" placeholder="date of birth" [(ngModel)]="dob"/>
+    Phone: <input type="phone" id="phone" placeholder=" phonenumber" [(ngModel)]="phone"/>
+    Email: <input type="email" id="email" placeholder="email" [(ngModel)]="email"/>
+  Hobbies: <input type="textarea" id="hobby" placeholder="hobbies" [(ngModel)]="hobby"/>
+  <button type ="submit" (click) = "showProfile()">Submit</button>
+  </div> -->
+  <div class="card">
+    <img src="img_avatar.png" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{fname}} {{lname}}</b></h4>
+      <p>DOB: {{day}}/{{month}}/{{year}}</p>
+      <p>Phone: {{phone}}</p>
+      <p>Email: {{email}}</p>
+      <p>Hobbies: {{hobby}}</p>
+    </div>
+  </div>
+
+
+</div>

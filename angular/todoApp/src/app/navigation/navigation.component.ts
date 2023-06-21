@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
-  status = "Login";
-  flag=true;
-  switchStatus() {
-    this.status = this.flag==false?"Logout":"Login";
-  }
+  
 }
